@@ -31,7 +31,6 @@ app.get("/", (req: Request, res: Response) => {
     version: "1.0.0",
   });
 });
-
 // API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/members", memberRoutes);
