@@ -10,8 +10,8 @@ import { authMiddleware } from "../middleware/authMiddleware";
 const router = express.Router();
 
 // Protected routes (require authentication)
-router.get("/", authMiddleware, getAllMembers);
-router.get("/search", authMiddleware, searchMembers);
-router.get("/:id", authMiddleware, getMemberById);
+router.get("/", getAllMembers);
+router.get("/search", searchMembers);
+router.get("/:id", getMemberById);
 
 export default router;
